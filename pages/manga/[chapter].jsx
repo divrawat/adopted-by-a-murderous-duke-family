@@ -7,6 +7,7 @@ import DisqusComments from '@/components/DisQus';
 export const runtime = 'experimental-edge';
 import dynamic from 'next/dynamic';
 const AdSense = dynamic(() => import('@/components/Adsense'), { ssr: false });
+import React from 'react';
 
 export default function Chapter({ chapterNumber, imageUrls, totalChapters, params, errorcode }) {
 
