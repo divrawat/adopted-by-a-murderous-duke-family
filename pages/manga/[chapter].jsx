@@ -75,6 +75,13 @@ export default function Chapter({ chapterNumber, imageUrls, totalChapters, param
             <meta property="og:image:secure_url" content={`${DOMAIN}/images/${IMAGE_PREFIX}/chapter-${chapterNumber}/1.webp`} />
             <meta property="og:image:type" content="image/jpg" />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+            <script
+                dangerouslySetInnerHTML={{
+                    __html: `
+                gtag('event', 'conversion', {'send_to': 'AW-350058572/TFkMCLST16MZEMzw9aYB'});
+              `,
+                }}
+            />
         </Head >
     );
 
