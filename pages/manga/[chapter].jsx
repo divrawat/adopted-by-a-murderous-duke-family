@@ -125,20 +125,20 @@ export default function Chapter({ chapterNumber, imageUrls, totalChapters, param
                     </div>
                 </div>
 
-                <AdSense />
+                {/* <AdSense /> */}
 
-                {/* <div className='max-w-[1200px] mx-auto mb-5'>
+                <div className='max-w-[1200px] mx-auto mb-5'>
                     {imageUrls.map((imageUrl, index) => (
                         <div className='allimages' key={index}>
                             <img width={700} height={600} loading="lazy" src={imageUrl} alt={`Chapter ${chapterNumber} Image ${index + 1}`} />
                         </div>
                     ))}
 
-                </div> */}
+                </div>
 
 
 
-                <div className="max-w-[1200px] mx-auto mb-5">
+                {/* <div className="max-w-[1200px] mx-auto mb-5">
                     {imageUrls.map((imageUrl, index) => (
                         <React.Fragment key={index}>
                             <div className="allimages">
@@ -155,7 +155,7 @@ export default function Chapter({ chapterNumber, imageUrls, totalChapters, param
                             )}
                         </React.Fragment>
                     ))}
-                </div>
+                </div> */}
 
 
 
@@ -168,12 +168,12 @@ export default function Chapter({ chapterNumber, imageUrls, totalChapters, param
 
 
 
-                <div className='py-10 bg-[#0f0511]'>
+                {/* <div className='py-10 bg-[#0f0511]'>
                     <h2 className='text-4xl text-center text-[white] font-blod px-4 mb-10'>Comment Section</h2>
                     <section className='max-w-[1000px] mx-auto px-5'>
                         <DisqusComments url={`/manga/${URL}`} identifier={chapterNumber} title={`${MANGA_NAME} Chapter ${chapterNumber}`} />
                     </section>
-                </div>
+                </div> */}
             </article>
 
             <Footer />

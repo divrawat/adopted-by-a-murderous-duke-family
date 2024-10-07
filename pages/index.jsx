@@ -142,7 +142,7 @@ export default function Home() {
         </div>
 
 
-        <AdSense />
+        {/* <AdSense /> */}
 
 
         <h2 id="readmanga" className="font-extrabold text-3xl my-10 px-4 text-center">
@@ -157,7 +157,7 @@ export default function Home() {
                 // onClick={handleRedirect}
                 href={chapter.url} className="p-5 hover:underline">
                 <p className="w-[300px] text-center p-5 border border-l-8 border-[black] font-bold break-words">
-                  {`${MANGA_NAME}, Chapter ${chapter.number}`}
+                  {`Chapter ${chapter.number}`}
                 </p>
               </a>
             </div>
@@ -194,7 +194,7 @@ export default function Home() {
 
 
 
-        <AdSense />
+        {/* <AdSense /> */}
 
 
 
