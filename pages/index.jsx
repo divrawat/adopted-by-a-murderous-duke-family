@@ -86,7 +86,7 @@ export default function Home() {
       {head()}
       <Navbar />
       <article>
-
+        <AdSense />
         <div className="md:flex md:mb-[60px] mb-5 pt-3 relative bg-[black]">
           <div className="absolute inset-0 bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${BEHIND_COVER_IMG})`, opacity: '0.20' }}></div>
 
@@ -142,7 +142,7 @@ export default function Home() {
         </div>
 
 
-        {/* <AdSense /> */}
+        <AdSense />
 
 
         <h2 id="readmanga" className="font-extrabold text-3xl my-10 px-4 text-center">
@@ -194,7 +194,7 @@ export default function Home() {
 
 
 
-        {/* <AdSense /> */}
+        <AdSense />
 
 
 

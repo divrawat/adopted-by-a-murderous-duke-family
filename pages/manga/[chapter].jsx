@@ -97,6 +97,7 @@ export default function Chapter({ chapterNumber, imageUrls, totalChapters, param
             {head()}
             <Navbar />
             <article>
+                <AdSense />
                 <h1 className="text-3xl font-bold text-center p-5 md:my-5">{`${MANGA_NAME} Chapter ${chapterNumber}`}</h1>
                 <p className='text-center px-4'>{`You are reading ${MANGA_NAME} Chapter ${chapterNumber}`}</p>
 
@@ -125,20 +126,20 @@ export default function Chapter({ chapterNumber, imageUrls, totalChapters, param
                     </div>
                 </div>
 
-                {/* <AdSense /> */}
+                <AdSense />
 
-                <div className='max-w-[1200px] mx-auto mb-5'>
+                {/* <div className='max-w-[1200px] mx-auto mb-5'>
                     {imageUrls.map((imageUrl, index) => (
                         <div className='allimages' key={index}>
                             <img width={700} height={600} loading="lazy" src={imageUrl} alt={`Chapter ${chapterNumber} Image ${index + 1}`} />
                         </div>
                     ))}
 
-                </div>
+                </div> */}
 
 
 
-                {/* <div className="max-w-[1200px] mx-auto mb-5">
+                <div className="max-w-[1200px] mx-auto mb-5">
                     {imageUrls.map((imageUrl, index) => (
                         <React.Fragment key={index}>
                             <div className="allimages">
@@ -155,7 +156,7 @@ export default function Chapter({ chapterNumber, imageUrls, totalChapters, param
                             )}
                         </React.Fragment>
                     ))}
-                </div> */}
+                </div>
 
 
 
