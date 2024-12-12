@@ -126,7 +126,7 @@ export default function Chapter({ chapterNumber, imageUrls, totalChapters, param
                     </div>
                 </div>
 
-                {/* <AdSense /> */}
+                <AdSense />
 
                 {/* <div className='max-w-[1200px] mx-auto mb-5'>
                     {imageUrls.map((imageUrl, index) => (
