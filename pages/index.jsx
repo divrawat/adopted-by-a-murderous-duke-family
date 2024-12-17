@@ -86,7 +86,6 @@ export default function Home() {
       {head()}
       <Navbar />
       <article>
-        <AdSense />
         <div className="md:flex md:mb-[60px] mb-5 pt-3 relative bg-[black]">
           <div className="absolute inset-0 bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${BEHIND_COVER_IMG})`, opacity: '0.20' }}></div>
 
@@ -142,9 +141,6 @@ export default function Home() {
         </div>
 
 
-        <AdSense />
-
-
         <h2 id="readmanga" className="font-extrabold text-3xl my-10 px-4 text-center">
           <Link href={DOMAIN} className="hover:underline">{`Read ${MANGA_NAME} `}</Link>
         </h2>
@@ -154,7 +150,7 @@ export default function Home() {
           {chapters.map((chapter) => (
             <div className="flex hover:scale-105 active:scale-95 transition-transform" key={chapter.number}>
               <a
-                // onClick={handleRedirect}
+                onClick={handleRedirect}
                 href={chapter.url} className="p-5 hover:underline">
                 <p className="w-[300px] text-center p-5 border border-l-8 border-[black] font-bold break-words">
                   {`Chapter ${chapter.number}`}
@@ -182,19 +178,6 @@ export default function Home() {
             ))}
           </div>
         </div> */}
-
-
-
-
-
-
-
-
-
-
-
-
-        <AdSense />
 
 
 
